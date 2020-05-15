@@ -8,13 +8,14 @@ import org.springframework.stereotype.Service;
 /**
  * Created by Ahmed Nassar.
  * Date: 15 May, 2020
+ * Time: 4:44 PM
  */
 @Service
 @Primary
-@Profile("en")
-public class PrimaryGreetingServiceImpl implements IGreetingService {
+@Profile("ar")
+public class PrimaryArabicGreetingServiceImpl implements IGreetingService {
     @Override
     public String sayGreetings() {
-        return "Hello - Primary Greeting service!";
+        return "مرحباً بك في خدمة التحيات الأساسية";
     }
 }
