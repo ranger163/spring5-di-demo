@@ -1,4 +1,4 @@
-package me.inassar.didemo.services;
+package me.inassar.didemo.services.interfaces;
 
 public interface IGreetingService {
 

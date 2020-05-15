@@ -1,7 +1,7 @@
 package me.inassar.didemo;
 
 import me.inassar.didemo.controllers.ConstructorInjectedController;
-import me.inassar.didemo.services.GreetingServiceImpl;
+import me.inassar.didemo.services.impl.GreetingServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 

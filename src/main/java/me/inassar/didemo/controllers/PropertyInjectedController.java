@@ -1,6 +1,6 @@
 package me.inassar.didemo.controllers;
 
-import me.inassar.didemo.services.GreetingServiceImpl;
+import me.inassar.didemo.services.impl.GreetingServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 

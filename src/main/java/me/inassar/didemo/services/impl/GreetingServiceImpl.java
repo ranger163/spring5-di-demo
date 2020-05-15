@@ -1,5 +1,6 @@
-package me.inassar.didemo.services;
+package me.inassar.didemo.services.impl;
 
+import me.inassar.didemo.services.interfaces.IGreetingService;
 import org.springframework.stereotype.Service;
 
 @Service
