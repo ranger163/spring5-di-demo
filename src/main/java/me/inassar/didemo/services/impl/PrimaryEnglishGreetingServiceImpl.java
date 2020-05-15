@@ -1,7 +1,7 @@
 package me.inassar.didemo.services.impl;
 
-import me.inassar.didemo.services.interfaces.IGreetingRepo;
-import me.inassar.didemo.services.interfaces.IGreetingService;
+import me.inassar.didemo.services.interfaces.GreetingRepository;
+import me.inassar.didemo.services.interfaces.GreetingService;
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
@@ -13,11 +13,11 @@ import org.springframework.stereotype.Service;
 @Service
 @Primary
 @Profile({"en","default"})
-public class PrimaryEnglishGreetingServiceImpl implements IGreetingService {
+public class PrimaryEnglishGreetingServiceImpl implements GreetingService {
 
-    private IGreetingRepo repo;
+    private GreetingRepository repo;
 
-    public PrimaryEnglishGreetingServiceImpl(IGreetingRepo repo) {
+    public PrimaryEnglishGreetingServiceImpl(GreetingRepository repo) {
         this.repo = repo;
     }
 

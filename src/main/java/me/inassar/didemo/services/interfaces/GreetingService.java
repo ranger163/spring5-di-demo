@@ -1,6 +1,6 @@
 package me.inassar.didemo.services.interfaces;
 
-public interface IGreetingService {
+public interface GreetingService {
 
     String sayGreetings();
 

@@ -5,7 +5,7 @@ package me.inassar.didemo.services.interfaces;
  * Date: 15 May, 2020
  * Time: 5:15 PM
  */
-public interface IGreetingRepo {
+public interface GreetingRepository {
     String getEnglishGreetings();
 
     String getArabicGreetings();

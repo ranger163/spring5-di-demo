@@ -1,14 +1,14 @@
 package me.inassar.didemo.controllers;
 
-import me.inassar.didemo.services.interfaces.IGreetingService;
+import me.inassar.didemo.services.interfaces.GreetingService;
 import org.springframework.stereotype.Controller;
 
 @Controller
 public class MyController {
 
-    private IGreetingService service;
+    private GreetingService service;
 
-    public MyController(IGreetingService service) {
+    public MyController(GreetingService service) {
         this.service = service;
     }
 
