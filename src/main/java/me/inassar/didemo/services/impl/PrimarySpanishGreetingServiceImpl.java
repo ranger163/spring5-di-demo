@@ -1,5 +1,6 @@
 package me.inassar.didemo.services.impl;
 
+import me.inassar.didemo.services.interfaces.IGreetingRepo;
 import me.inassar.didemo.services.interfaces.IGreetingService;
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
@@ -14,8 +15,15 @@ import org.springframework.stereotype.Service;
 @Primary
 @Profile("es")
 public class PrimarySpanishGreetingServiceImpl implements IGreetingService {
+
+    private IGreetingRepo repo;
+
+    public PrimarySpanishGreetingServiceImpl(IGreetingRepo repo) {
+        this.repo = repo;
+    }
+
     @Override
     public String sayGreetings() {
-        return "Holla - Servicio de Saludo Primario";
+        return repo.getSpanishGreetings();
     }
 }
