@@ -8,7 +8,7 @@ public class SetterInjectedController {
 
     private IGreetingService greetingService;
 
-    String sayHello(){
+    public String sayHello(){
         return greetingService.sayGreetings();
     }
 
